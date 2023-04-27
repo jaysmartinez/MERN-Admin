@@ -5,17 +5,17 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import helmet from 'helmet';
 import morgan from 'morgan';
-import clientRoutes from './routes/client.js';
-import generalRoutes from './routes/general.js';
-import managementRoutes from './routes/management.js';
-import salesRoutes from './routes/sales.js';
+import clientRoutes from './src/routes/client.js';
+import generalRoutes from './src/routes/general.js';
+import managementRoutes from './src/routes/management.js';
+import salesRoutes from './src/routes/sales.js';
 
 // data imports
-import User from './models/User.js';
-import Product from './models/Product.js';
-import ProductStat from './models/ProductStat.js';
-import Transaction from './models/Transaction.js';
-import OverallStat from './models/OverallStat.js';
+import User from './src/models/User.js';
+import Product from './src/models/Product.js';
+import ProductStat from './src/models/ProductStat.js';
+import Transaction from './src/models/Transaction.js';
+import OverallStat from './src/models/OverallStat.js';
 // import AffiliateStat from './models/AffiliateStat.js';
 import {
 	dataUser,
@@ -24,7 +24,7 @@ import {
 	dataTransaction,
 	dataOverallStat,
 	dataAffiliateStat,
-} from './data/index.js';
+} from './src/data/index.js';
 
 /* CONFIG */
 dotenv.config();
